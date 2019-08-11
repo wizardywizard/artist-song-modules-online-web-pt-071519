@@ -6,8 +6,9 @@ require_relative '../lib/concerns/findable'
 class Artist
   
   extend Memorable::ClassMethod
-   extend Findable::ClassMethod
-   include Paramable::ClassMethod
+  
+  extend Findable::ClassMethod
+  include Paramable::ClassMethod
   
   attr_accessor :name
   attr_reader :songs
