@@ -6,7 +6,7 @@ require_relative '../lib/concerns/findable'
 class Song
   
   extend Memorable::ClassMethod
-  
+  include Memorable::InstanceMethods
   extend Findable::ClassMethod
   include Paramable::ClassMethod
   
